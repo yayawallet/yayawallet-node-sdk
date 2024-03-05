@@ -1,0 +1,13 @@
+{
+  "name": "yaya-node",
+  "version": "1.0.9",
+  "description": "node sdk integration demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
