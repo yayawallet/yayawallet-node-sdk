@@ -27,7 +27,7 @@ const Sidebar = () => {
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full  py-3 overflow-y-auto bg-gray-50">
+        <div className="h-full  py-3 overflow-y-auto bg-gray-50 ">
           <a href="/" className="flex items-center ps-2.5 mb-5 shadow-sm">
             <img src={yayawalletLogo} className="h-12" alt="YaYaWallet Logo" />
           </a>
