@@ -1,13 +1,11 @@
 {
-  "name": "yayawallet-node-sdk",
-  "version": "1.0.9",
+  "name": "@yayawallet/node-sdk",
+  "version": "0.0.0",
   "description": "node sdk integration",
   "main": "index.js",
-  "exports": "./source/index.js",
-  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/yayawallet/yayawallet-node-sdk"
+    "url": "git+https://github.com/yayawallet/yayawallet-node-sdk.git"
   },
   "keywords": [
     "yaya",
@@ -18,5 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.7"
+  },
+  "bugs": {
+    "url": "https://github.com/yayawallet/yayawallet-node-sdk/issues"
+  },
+  "homepage": "https://github.com/yayawallet/yayawallet-node-sdk#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
