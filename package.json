@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "node sdk integration",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yayawallet/yayawallet-node-sdk.git"
