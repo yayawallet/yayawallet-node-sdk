@@ -19,5 +19,5 @@ module.exports = {
   ...transaction,
   ...transfer,
   ...user,
-  ...verify
+  ...verify,
 };
