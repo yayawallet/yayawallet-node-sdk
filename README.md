@@ -7,6 +7,7 @@ This Node.js SDK provides integration with Yaya Wallet API, allowing developers 
 This guide will walk you through setting up and using the Yaya Wallet SDK in your Node.js application to interact with the Yaya Wallet API.
 
 **1. Installation**
+
 Before you begin, ensure you have Node.js and npm installed on your system. You can install the SDK via npm using the following command:
 
 ```bash
@@ -24,6 +25,7 @@ npm install @yayawallet/node-sdk
 **Important**: Never commit your .env file to a version control system like Git, as it contains sensitive information.
 
 **3. Using the SDK in Your Code**
+
 Now that you have the SDK installed and your credentials set up, you can start using the SDK's functions to interact with the Yaya Wallet API.
 
 **Import Required Functions:**
