@@ -22,6 +22,13 @@ npm install @yayawallet/node-sdk
 
 2. Add the following lines to the .env file, replacing the placeholders with your actual Yaya Wallet API credentials:
 
+```bash
+API_URL=https://yayawallet.com/api/en
+API_PATH=/api/en
+API_KEY=your_yayawallet_api_key
+API_SECRET=your_yayawallet_api_secret
+```
+
 **Important**: Never commit your .env file to a version control system like Git, as it contains sensitive information.
 
 **3. Using the SDK in Your Code**
@@ -30,27 +37,28 @@ Now that you have the SDK installed and your credentials set up, you can start u
 
 **Import Required Functions:**
 
-Import the specific functions you need from the `bash @yayawallet/node-sdk ` module. Here's an example of importing the ``bash getProfile ` function:
+Import the specific functions you need from the `@yayawallet/node-sdk` module. Here's an example of importing the `getProfile` function:
 
-```bash
+````
 
 const { getProfile } = require('@yayawallet/node-sdk');
-```
+```js
 
 **Make API Calls:**
 
 Once you've imported the functions, you can use them to make API calls. For instance, to retrieve a user's profile information:
 
-```bash
+````
 
 getProfile('username')
-  .then(profile => {
-    console.log('User Profile:', profile);
-  })
-  .catch(error => {
-    console.error('Error fetching user profile:', error);
-  });
-```
+.then(profile => {
+console.log('User Profile:', profile);
+})
+.catch(error => {
+console.error('Error fetching user profile:', error);
+});
+
+```js
 
 **Note:** Replace 'username' with the actual username you want to retrieve information for.
 
@@ -69,3 +77,4 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 This SDK is licensed under the ISC License.
 
 **Note**: This SDK requires Node.js version 12.x or higher.
+```
