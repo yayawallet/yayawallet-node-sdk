@@ -1,10 +1,10 @@
-# Yaya Wallet Node SDK
+# YaYa Wallet Node SDK
 
-This Node.js SDK provides integration with Yaya Wallet API, allowing developers to interact with the Yaya Wallet platform programmatically.
+This Node.js SDK provides integration with YaYa Wallet API, allowing developers to interact with the YaYa Wallet platform programmatically.
 
-## Getting Started with the Yaya Wallet SDK for Node.js
+## Getting Started with the YaYa Wallet SDK for Node.js
 
-This guide will walk you through setting up and using the Yaya Wallet SDK in your Node.js application to interact with the Yaya Wallet API.
+This guide will walk you through setting up and using the YaYa Wallet SDK in your Node.js application to interact with the YaYa Wallet API.
 
 **1. Installation**
 
@@ -20,20 +20,20 @@ npm install @yayawallet/node-sdk
 
 1. Create a file named .env in the root directory of your project. This file will store your API credentials securely, separate from your code.
 
-2. Add the following lines to the .env file, replacing the placeholders with your actual Yaya Wallet API credentials:
+2. Add the following lines to the .env file, replacing the placeholders with your actual YaYa Wallet API credentials:
 
 ```bash
-API_URL=https://yayawallet.com/api/en
-API_PATH=/api/en
-API_KEY=your_yayawallet_api_key
-API_SECRET=your_yayawallet_api_secret
+YAYA_API_URL=https://yayawallet.com/api/en
+YAYA_API_PATH=/api/en
+YAYA_API_KEY=your_yayawallet_api_key
+YAYA_API_SECRET=your_yayawallet_api_secret
 ```
 
 **Important**: Never commit your .env file to a version control system like Git, as it contains sensitive information.
 
 **3. Using the SDK in Your Code**
 
-Now that you have the SDK installed and your credentials set up, you can start using the SDK's functions to interact with the Yaya Wallet API.
+Now that you have the SDK installed and your credentials set up, you can start using the SDK's functions to interact with the YaYa Wallet API.
 
 **Import Required Functions:**
 
@@ -59,11 +59,11 @@ getProfile('username')
 
 **Note:** Replace 'username' with the actual username you want to retrieve information for.
 
-This is a basic example, and the SDK offers various other functions for interacting with the Yaya Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#api-documentation) and their usage details.
+This is a basic example, and the SDK offers various other functions for interacting with the YaYa Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#api-documentation) and their usage details.
 
 ## API Documentation
 
-For detailed documentation on the SDK's methods and usage, please refer to the [Yaya Wallet API Documentation](https://github.com/yayawallet/yayawallet-node-sdk#readme).
+For detailed documentation on the SDK's methods and usage, please refer to the [YaYa Wallet API Documentation](https://github.com/yayawallet/yayawallet-node-sdk#readme).
 
 ## Issues
 
