@@ -1,6 +1,6 @@
 {
   "name": "@yayawallet/node-sdk",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "node sdk integration",
   "main": "index.js",
   "scripts": {
