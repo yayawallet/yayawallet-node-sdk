@@ -8,6 +8,8 @@ const transaction = require('./lib/transaction');
 const transfer = require('./lib/transfer');
 const user = require('./lib/user');
 const verify = require('./lib/verify');
+const equb = require('./lib/equb');
+const recurringContract = require('./lib/recurringContract');
 
 module.exports = {
   ...airtime,
@@ -20,4 +22,6 @@ module.exports = {
   ...transfer,
   ...user,
   ...verify,
+  ...equb,
+  ...recurringContract,
 };
