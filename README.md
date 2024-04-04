@@ -1,51 +1,69 @@
-# Yaya Wallet Node SDK
+# YaYa Wallet Node SDK
 
-This Node.js SDK provides integration with Yaya Wallet API, allowing developers to interact with the Yaya Wallet platform programmatically.
+This Node.js SDK provides integration with YaYa Wallet API, allowing developers to interact with the YaYa Wallet platform programmatically.
 
-## Installation
+## Getting Started with the YaYa Wallet SDK for Node.js
 
-You can install the Yaya Wallet Node SDK via npm:
+This guide will walk you through setting up and using the YaYa Wallet SDK in your Node.js application to interact with the YaYa Wallet API.
+
+**1. Installation**
+
+Before you begin, ensure you have Node.js and npm installed on your system. You can install the SDK via npm using the following command:
 
 ```bash
 npm install @yayawallet/node-sdk
 ```
 
-## Usage
+**2. Environment Setup**
 
-To use the SDK in your Node.js application, require it as follows:
+**Secure Credentials with a .env File:**
+
+1. Create a file named .env in the root directory of your project. This file will store your API credentials securely, separate from your code.
+
+2. Add the following lines to the .env file, replacing the placeholders with your actual YaYa Wallet API credentials:
 
 ```bash
-const yayaSdk = require('@yayawallet/node-sdk');
+YAYA_API_URL=https://yayawallet.com/api/en
+YAYA_API_PATH=/api/en
+YAYA_API_KEY=your_yayawallet_api_key
+YAYA_API_SECRET=your_yayawallet_api_secret
 ```
 
-Then, you can start using the SDK's methods to interact with the Yaya Wallet API.
+**Important**: Never commit your .env file to a version control system like Git, as it contains sensitive information.
 
-## Example
+**3. Using the SDK in Your Code**
 
-Here's a simple example demonstrating how to use the SDK to perform a basic operation:
+Now that you have the SDK installed and your credentials set up, you can start using the SDK's functions to interact with the YaYa Wallet API.
 
-```bash
-const yayaSdk = require('@yayawallet/node-sdk');
+**Import Required Functions:**
 
-// Initialize the SDK with your credentials
-const yayaClient = new yayaSdk.YayaClient({
-  apiKey: 'your-api-key',
-  apiSecret: 'your-api-secret'
-});
+Import the specific functions you need from the `@yayawallet/node-sdk` module. Here's an example of importing the `getProfile` function:
 
-// Example: Fetch user's wallet balance
-yayaClient.getBalance('user-id')
-  .then(balance => {
-    console.log('User wallet balance:', balance);
+```js
+const { getProfile } = require('@yayawallet/node-sdk');
+```
+
+**Make API Calls:**
+
+Once you've imported the functions, you can use them to make API calls. For instance, to retrieve a user's profile information:
+
+```js
+getProfile('username')
+  .then((profile) => {
+    console.log('User Profile:', profile);
   })
-  .catch(error => {
-    console.error('Error fetching wallet balance:', error);
+  .catch((error) => {
+    console.error('Error fetching user profile:', error);
   });
 ```
 
+**Note:** Replace 'username' with the actual username you want to retrieve information for.
+
+This is a basic example, and the SDK offers various other functions for interacting with the YaYa Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#api-documentation) and their usage details.
+
 ## API Documentation
 
-For detailed documentation on the SDK's methods and usage, please refer to the [Yaya Wallet API Documentation](https://github.com/yayawallet/yayawallet-node-sdk#readme).
+For detailed documentation on the SDK's methods and usage, please refer to the [YaYa Wallet API Documentation](https://github.com/yayawallet/yayawallet-node-sdk#readme).
 
 ## Issues
 
