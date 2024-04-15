@@ -65,7 +65,7 @@ getProfile('username')
 
 This is a basic example, and the SDK offers various other functions for interacting with the YaYa Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#api-documentation) and their usage details.
 
-## API Documentation
+## SDK Documentation
 
 List of all functions available in this sdk.
 
