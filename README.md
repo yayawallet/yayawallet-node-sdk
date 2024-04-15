@@ -1,6 +1,6 @@
-# YaYa Wallet Node SDK
+<img src="https://yayawallet.com/images/logo.svg" height="100px" />
 
-This Node.js SDK provides integration with YaYa Wallet API, allowing developers to interact with the YaYa Wallet platform programmatically.
+**YaYa Wallet Node SDK** provides integration with YaYa Wallet API, allowing developers to interact with the YaYa Wallet platform programmatically.
 
 ## Getting Started with the YaYa Wallet SDK for Node.js
 
