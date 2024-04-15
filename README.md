@@ -2,6 +2,10 @@
 
 **YaYa Wallet Node SDK** provides integration with YaYa Wallet API, allowing developers to interact with the YaYa Wallet platform programmatically.
 
+[![NPM Version][npm-version-image]][npm-url]
+[![NPM Install Size][npm-install-size-image]][npm-install-size-url]
+[![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+
 ## Getting Started with the YaYa Wallet SDK for Node.js
 
 This guide will walk you through setting up and using the YaYa Wallet SDK in your Node.js application to interact with the YaYa Wallet API.
@@ -198,3 +202,10 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 This SDK is licensed under the ISC License.
 
 **Note**: This SDK requires Node.js version 20.x or higher.
+
+[npm-downloads-image]: https://badgen.net/npm/dm/@yayawallet/node-sdk
+[npm-downloads-url]: https://npmcharts.com/compare/@yayawallet/node-sdk?minimal=true
+[npm-install-size-image]: https://badgen.net/packagephobia/install/@yayawallet/node-sdk
+[npm-install-size-url]: https://packagephobia.com/result?p=@yayawallet/node-sdk
+[npm-url]: https://npmjs.org/package/@yayawallet/node-sdk
+[npm-version-image]: https://badgen.net/npm/v/@yayawallet/node-sdk
