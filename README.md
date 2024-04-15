@@ -63,7 +63,131 @@ This is a basic example, and the SDK offers various other functions for interact
 
 ## API Documentation
 
-For detailed documentation on the SDK's methods and usage, please refer to the [YaYa Wallet API Documentation](https://github.com/yayawallet/yayawallet-node-sdk#readme).
+List of all functions available in this sdk.
+
+**User**
+
+```js
+getProfile();
+searchUser(query); // query can be username, phone number, email
+getOrganization();
+```
+
+**Transaction**
+
+```js
+getTransactionListByUser(params); // params = page number
+createTransaction(receiver, amount, cause);
+transactionFee(receiver, amount);
+generateQrUrl(amount, cause);
+getTransactionById(id); // id = transaction id
+searchTransaction(query); // query = transactionid, username, phone number, email
+```
+
+**Transfer**
+
+```js
+getTransferList();
+transferAsUser(institution_code, account_number, amount, ref_code, sender_note, phone);
+externalAccountLookup(institution_code, account_number);
+getTransferFee(institution_code, amount);
+```
+
+**Air Time**
+
+```js
+buyAirtime(phone, amount);
+listRecharges();
+```
+
+**Saving**
+
+```js
+createSaving(amount, action);
+withdrawSaving();
+claim(request_ids);
+```
+
+**Recurring Contract**
+
+```js
+listAllContracts();
+createContract(contract_number, service_type, customer_account_name, meta_data);
+requestPayment(contract_number, amount, currency, cause, notification_url, meta_data);
+getSubscriptions();
+getListOfPaymentRequests();
+approvePaymentRequest(id);
+rejectPaymentRequest(id);
+activateSubscription(id);
+deactivateSubscription(id);
+```
+
+**EQub**
+
+```js
+createEqub(
+  equb_account,
+  title,
+  description,
+  location,
+  latitude,
+  longitude,
+  period,
+  amount,
+  private
+);
+updateEqub(id, title, description, location, latitude, longitude, period, amount, private);
+createNewRoundOfEqub(id);
+equbPayments(id);
+equbRoundsByID(id);
+equbRoundsByName(name);
+listOfEqubs();
+findEqubsByUser();
+findEqubByID(id);
+findEqubByName(name);
+payEqubRound(id, round, payment);
+findMembersOfEqub(id);
+removeMembersOfEqub(id);
+joinEqub(id);
+leaveEqub(id);
+```
+
+**Invitation**
+
+```js
+findByInviter();
+createInvitation(country, phone, amount);
+```
+
+**Institution**
+
+```js
+listInstitution(country);
+```
+
+**verification**
+
+```js
+getVerifiedPaymentDetails(data, signature);
+```
+
+**Time**
+
+```js
+getTime();
+```
+
+**Generate Signature**
+
+```js
+generateSignature(timestamp, method, endpoint, body);
+```
+
+**API Request**
+
+```js
+apiRequest(method, path, params, body);
+```
 
 ## Issues
 
@@ -73,4 +197,4 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 
 This SDK is licensed under the ISC License.
 
-**Note**: This SDK requires Node.js version 12.x or higher.
+**Note**: This SDK requires Node.js version 20.x or higher.
