@@ -52,6 +52,9 @@ const { getProfile } = require('@yayawallet/node-sdk');
 Once you've imported the functions, you can use them to make API calls. For instance, to retrieve a user's profile information:
 
 ```js
+const { getProfile } = require('@yayawallet/node-sdk');
+
+// Make a request for a profile
 getProfile()
   .then((profile) => {
     console.log('User Profile:', profile);
@@ -60,11 +63,14 @@ getProfile()
     console.error('Error fetching user profile: ', error);
   });
 
-try {
-  const profile = await getProfile();
-  console.log(profile);
-} catch(error) {
-  console.log('Error fetching user profile: ', error);
+// Want to use async/await?
+async function getProfileInformation() {
+  try {
+    const profile = await getProfile();
+    console.log(profile);
+  } catch (error) {
+    console.log('Error fetching user profile: ', error);
+  }
 }
 ```
 
