@@ -1,5 +1,5 @@
 const CONSTANTS = {
-  TimestampExpiry: 300
+  TimestampExpiry: 300,
 };
 
 module.exports = CONSTANTS;
