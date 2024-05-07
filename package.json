@@ -4,7 +4,8 @@
   "description": "node sdk integration",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "test": "NODE_ENV=test node index.js",
+    "start": "NODE_ENV=production node index.js",
     "prepare": "husky",
     "format": "prettier --write ."
   },
