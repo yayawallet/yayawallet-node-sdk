@@ -10,6 +10,7 @@ const user = require('./lib/user');
 const verify = require('./lib/verify');
 const equb = require('./lib/equb');
 const recurringContract = require('./lib/recurringContract');
+const scheduledPayment = require('./lib/scheduledPayment.js');
 
 module.exports = {
   ...airtime,
@@ -24,4 +25,5 @@ module.exports = {
   ...verify,
   ...equb,
   ...recurringContract,
+  ...scheduledPayment,
 };
