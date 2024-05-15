@@ -52,18 +52,29 @@ const { getProfile } = require('@yayawallet/node-sdk');
 Once you've imported the functions, you can use them to make API calls. For instance, to retrieve a user's profile information:
 
 ```js
-getProfile('username')
+const { getProfile } = require('@yayawallet/node-sdk');
+
+// Make a request for a profile
+getProfile()
   .then((profile) => {
     console.log('User Profile:', profile);
   })
   .catch((error) => {
-    console.error('Error fetching user profile:', error);
+    console.error('Error fetching user profile: ', error);
   });
+
+// Want to use async/await?
+async function getProfileInformation() {
+  try {
+    const profile = await getProfile();
+    console.log(profile);
+  } catch (error) {
+    console.log('Error fetching user profile: ', error);
+  }
+}
 ```
 
-**Note:** Replace 'username' with the actual username you want to retrieve information for.
-
-This is a basic example, and the SDK offers various other functions for interacting with the YaYa Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#api-documentation) and their usage details.
+This is a basic example, and the SDK offers various other functions for interacting with the YaYa Wallet API. Refer to the official SDK documentation for a complete list of [available functions](#sdk-documentation) and their usage details.
 
 ## SDK Documentation
 
@@ -101,6 +112,8 @@ getTransferFee(institution_code, amount);
 
 ```js
 buyAirtime(phone, amount);
+buyPackage(phone, package);
+listPackages(phone);
 listRecharges();
 ```
 
@@ -201,7 +214,6 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 
 This SDK is licensed under the ISC License.
 
-**Note**: This SDK requires Node.js version 20.x or higher.
 
 [npm-downloads-image]: https://badgen.net/npm/dm/@yayawallet/node-sdk
 [npm-downloads-url]: https://npmcharts.com/compare/@yayawallet/node-sdk?minimal=true
