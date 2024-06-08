@@ -1,10 +1,11 @@
 {
   "name": "@yayawallet/node-sdk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "node sdk integration",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_ENV=test node index.js",
+    "prod": "NODE_ENV=production node index.js",
     "prepare": "husky",
     "format": "prettier --write ."
   },
