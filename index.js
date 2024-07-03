@@ -11,6 +11,7 @@ const verify = require('./lib/verify');
 const equb = require('./lib/equb');
 const recurringContract = require('./lib/recurringContract');
 const scheduledPayment = require('./lib/scheduledPayment.js');
+const billPayment = require('./lib/billPayment.js');
 
 module.exports = {
   ...airtime,
@@ -26,4 +27,5 @@ module.exports = {
   ...equb,
   ...recurringContract,
   ...scheduledPayment,
+  ...billPayment,
 };
