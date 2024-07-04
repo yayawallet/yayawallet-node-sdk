@@ -28,6 +28,7 @@ npm install @yayawallet/node-sdk
 
 ```bash
 YAYA_API_URL=https://yayawallet.com/api/en
+YAYA_TEST_API_URL=https://sandbox.yayawallet.com/api/en
 YAYA_API_PATH=/api/en
 YAYA_API_KEY=your_yayawallet_api_key
 YAYA_API_SECRET=your_yayawallet_api_secret
@@ -169,6 +170,32 @@ joinEqub(id);
 leaveEqub(id);
 ```
 
+**Bill Payment**
+
+```js
+createMultipleBill(billArray);
+checkBulkImport();
+createBill(
+  client_yaya_account,
+  customer_yaya_account,
+  amount,
+  start_at,
+  due_at,
+  customer_id,
+  bill_id,
+  bill_code,
+  bill_season,
+  fwd_institution,
+  fwd_account_number,
+  description,
+  phone,
+  email
+);
+billList(client_yaya_account);
+findBill(bill_id, client_yaya_account);
+updateBill(updatedBill);
+```
+
 **Invitation**
 
 ```js
@@ -213,7 +240,6 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 ## License
 
 This SDK is licensed under the ISC License.
-
 
 [npm-downloads-image]: https://badgen.net/npm/dm/@yayawallet/node-sdk
 [npm-downloads-url]: https://npmcharts.com/compare/@yayawallet/node-sdk?minimal=true
