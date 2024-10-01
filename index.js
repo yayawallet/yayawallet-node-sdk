@@ -12,8 +12,12 @@ const equb = require('./lib/equb');
 const recurringContract = require('./lib/recurringContract');
 const scheduledPayment = require('./lib/scheduledPayment.js');
 const billPayment = require('./lib/billPayment.js');
+const lookups = require('./lib/lookups.js');
+const userRegistration = require('./lib/userRegistration.js');
 
 module.exports = {
+  ...userRegistration,
+  ...lookups,
   ...airtime,
   ...generateSignature,
   ...institution,
